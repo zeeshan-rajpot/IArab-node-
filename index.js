@@ -28,7 +28,8 @@ app.use(express.json());
 
 app.post('/signup', authController.signup);
 app.post('/signin', authController.signin);
-
+app.post('/forgetPassword' , authController.forgotPassword)
+app.put('/resetPassword' , authController.resetPassword)
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });

@@ -18,6 +18,8 @@ module.exports.userDetailSchema = (payload) => {
         phone: Joi.string(),
         firstName: Joi.string(),
         lastName: Joi.string(),
+        username :  Joi.string(),
+        Description : Joi.string(),
         
     }).unknown(false);
 
